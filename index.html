@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>귀여운 고양이</title>
+    <style>
+        body {
+            background-color: #FCE5CD; /* 배경색 변경 */
+            font-family: 'Nanum Pen Script', cursive; /* 동그란 폰트 적용 */
+        }
+        .container {
+            text-align: center; /* 제목과 내용을 가운데 정렬 */
+        }
+        .bh { 
+            color: rgb(99, 72, 61); 
+            font-size: 5em; /* 제목의 글자 크기를 3배로 키움 */
+        }
+        .gh { 
+            color: rgb(229, 186, 176); 
+            font-size: 3em; /* 부제목의 글자 크기를 3배로 키움 */
+        }
+        .content {
+            font-size: 3em; /* 내용의 글자 크기를 3배로 키움 */
+        }
+        .cat-image { 
+            max-width: 100%; 
+            height: auto; 
+        }
+        .cat-icon { 
+            font-size: 120px; /* 아이콘 크기 조정 */
+            cursor: pointer; /* 마우스 커서를 포인터로 변경하여 클릭 가능한 것처럼 보이도록 함 */
+        } 
+        .cute-text {
+            font-size: 3em; /* '졸귀탱  아래에 고앵이 설명 있음( •̀ ω •́ )' 문구의 글자 크기를 3배로 키움 */
+        }
+    </style>
+    <!-- Google Fonts 추가 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap">
+    <!-- Font Awesome CSS 추가 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="bh">고앵이</h1>
+        <h2 class="gh">짱 귀여워</h2>
+        <p class="content">나만 고양이 없어</p>
+
+        <!-- 엄청나게 귀여운 고양이 이미지와 설명 -->
+        <div>
+            <img class="cat-image" src="file:///C:/Users/user/Downloads/%EA%B3%A0%ED%99%94%EC%A7%88%20%EB%B0%B0%EA%B2%BD%ED%99%94%EB%A9%B4_%EB%B0%94%ED%83%95%ED%99%94%EB%A9%B4%20_%20%EA%B3%A0%EC%96%91%EC%9D%B4.jpeg" alt="귀여운 고양이">
+            <p class="cute-text">졸귀탱  아래에 고앵이 설명 있음( •̀ ω •́ )</p>
+        </div>
+
+        <!-- 귀여운 고양이 아이콘 추가 -->
+        <div>
+            <i class="cat-icon fas fa-cat" id="cat-link"></i>
+        </div>
+    </div>
+    
+    <script>
+        // 고양이 아이콘 클릭 시 이벤트 핸들러 추가
+        document.getElementById("cat-link").addEventListener("click", function() {
+            window.open("file:///C:/Users/user/Desktop/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8/new_page.html");
+        });
+    </script>
+</body>
+</html>

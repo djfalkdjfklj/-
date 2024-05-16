@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고양이 종류 소개</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* 기본 폰트 설정 */
+            background-color: #FCE5CD; /* 배경색 변경 */
+        }
+        .container {
+            text-align: center; /* 내용 가운데 정렬 */
+            margin-top: 50px; /* 위쪽 여백 추가 */
+        }
+        .bh { 
+            color: rgb(107, 90, 82); 
+            font-size: 2em; /* 제목의 글자 크기를 2배로 키움 */
+        }
+        .gh { 
+            color: rgb(233, 180, 169); 
+            font-size: 1.5em; /* 부제목의 글자 크기를 1.5배로 키움 */
+        }
+        .cat-type {
+            margin-bottom: 20px; /* 고양이 종류 사이에 여백 추가 */
+        }
+        .cat-image {
+            width: 200px; /* 사진 크기 조정 */
+            height: auto;
+            border-radius: 10px; /* 사진 모서리를 둥글게 만듦 */
+            cursor: pointer; /* 마우스 커서를 포인터로 변경하여 클릭 가능한 것처럼 보이도록 함 */
+            transition: transform 0.3s; /* 호버 효과를 위한 변형 트랜지션 추가 */
+        }
+        .cat-image:hover {
+            transform: scale(1.1); /* 호버시 사진 확대 효과 추가 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="bh">고양이들</h1>
+        <h2 class="gh">귀여운 응애들</h2>
+        <p>많관부</p>
+
+        <!-- 고양이 종류 소개 -->
+        <div class="cat-type">
+            <h3>샴 고양이</h3>
+            <a href="https://ko.wikipedia.org/wiki/%EC%83%B4%EA%B3%A0%EC%96%91%EC%9D%B4" target="_blank">
+                <img class="cat-image" src="https://cdn.pixabay.com/photo/2014/11/30/14/11/kitty-551554__480.jpg" alt="샴 고양이">
+            </a>
+        </div>
+        
+        <div class="cat-type">
+            <h3>먼치킨</h3>
+            <a href="https://ko.wikipedia.org/wiki/%EB%A8%BC%EC%B9%98%ED%82%A8_(%EA%B3%A0%EC%96%91%EC%9D%B4)" target="_blank">
+                <img class="cat-image" src="https://cdn.pixabay.com/photo/2016/06/14/00/14/cat-1455468__480.jpg" alt="먼치킨">
+            </a>
+        </div>
+
+        <div class="cat-type">
+            <h3>러시안 블루</h3>
+            <a href="https://ko.wikipedia.org/wiki/%EB%9F%AC%EC%8B%9C%EC%95%88_%EB%B8%94%EB%A3%A8" target="_blank">
+                <img class="cat-image" src="https://cdn.pixabay.com/photo/2017/07/25/01/22/cat-2536662__480.jpg" alt="러시안 블루">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
